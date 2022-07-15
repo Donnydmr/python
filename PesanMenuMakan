@@ -1,0 +1,50 @@
+#Pada program ini isinya ada List, Break, Loop, Condition, dan Input
+#Sebagai pemula, konsep-konsep dasar ini perlu diketahui
+print('SELAMAT DATANG DI WARUNG ETAM')
+print('di Warung Etam ini menjual beberapa menu makanan dan minuman')
+print('**********Makanan**********')
+print('1. NASI SOP      Rp12.000')
+print('2. RAWON         Rp15.000')
+print('3. Ayam Bakar    Rp15.000')
+print('4. Ikan Bakar    Rp15.000')
+print('**********Minuman**********')
+print('1.Es Teh         Rp3.000')
+print('2.Es Jeruk       Rp5.000')
+print('Pesanan Saya: (isi dengan nomor menu ya)')
+list_makan=[]
+list_minum=[]
+while True:
+  makan=int(input('Nomor Makanan\t\t:'))
+  n=int(input('Banyaknya pesanan\t:'))
+  makanan=[makan,n]
+  list_makan.append(makanan)
+  i=input('Ada Tambahan (y/n)\t:')
+  if i=='n'or'N':
+    break
+while True:
+  minum=int(input('Nomor Minuman\t\t:'))
+  m=int(input('Banyaknya Pesanan\t:'))
+  minuman=[minum,m]
+  list_minum.append(minuman)
+  j=input('Ada Tambahan (y/n)\t:')
+  if j=='n'or'N':
+    break
+print('\nPesanan Anda adalah')
+print('Makanan')
+for x,y in enumerate(list_makan):
+  if (y[0]==1):
+    print(f'{x+1}. Nasi Sop\t{y[1]}')
+  elif (y[0]==2):
+    print(f'{x+1}. Rawon\t{y[1]}')
+  elif (y[0]==3):
+    print(f'{x+1}. Ayam Bakar\t{y[1]}')
+  elif (y[0]==4):
+    print(f'{x+1}. Ikan Bakar\t{y[1]}')
+print('Minuman')
+for x,y, in enumerate(list_minum):
+  if (y[0]==1):
+    print(f'{x+1}. Es Teh\t{y[1]}')
+  if (y[0]==2):
+    print(f'{x+1}. Es Jeruk\t{y[1]}')
+
+print('Silahkan ditunggu yaa')
