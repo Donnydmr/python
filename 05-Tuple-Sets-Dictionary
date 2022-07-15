@@ -1,0 +1,55 @@
+#tuple
+#sets
+#dictionary
+
+#Tuple ini ga bisa diganti-ganti isi nya ya
+tupl1=(1,2,3)
+print(tupl1)
+print(tupl1[0])
+#tupl1.append(tupl1[1]) -> gagal
+
+#sets ini datanya ga membaca index jadi hanya himpunan gitu
+set1={1,2,3}
+print(set1)
+#print(set1[0])->gagal
+
+#Dictionary ini lebih luas lagi dari list, tuple maupun sets
+#dict={
+#    'key1':'value1',
+#    'key2':'value2
+#}
+data={
+    '1':'Nasi Kuning',
+    '2':'Rawon',
+    '3':'Ayam Bakar',
+    '4':'Ikan Bakar'
+}
+print(data)
+
+keys=data.keys()
+for key in data.keys():
+  print(key)
+
+values=data.values()
+for value in data.values():
+  print(value)
+
+items=data.items()
+for item in data.items():
+  print(item)
+
+for key,value in data.items():
+  print(key,value)
+#data copy
+data2=data.copy()
+data['1']='Nasi Campur'
+print(f'data2:{data2}\n')
+print(f'data:{data}')
+
+#pop dictionary (berdasarkan key)
+data3=data.pop('3')
+print(f'Data no 3:{data3}\n')
+
+#pop item (data terakhir)
+popitem=data.popitem()
+print(f'Data pop item:{popitem}\n')
