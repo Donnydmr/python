@@ -1,0 +1,5 @@
+#Program Variabel
+Nama='Donny Damara'
+Umur=24
+Domisili='Samarinda'
+print('Perkenalkan, nama gw ',Nama,' (',Umur,' Tahun), tinggal di ',Domisili)
