@@ -1,0 +1,20 @@
+#oke mari kita mencoba membuat program sederhana yaitu kalkulator biasa
+print('Selamat datang di Program Kalkulator Sederhana Python')
+print('Pada Kalkulator ini kita hanya bisa menginput 2 angka saja ya')
+a=int(input('Bilangan Pertama: '))
+b=int(input('Bilangan Kedua: '))
+print('operasi apa yang Anda pilih?')
+print('1. Perjumlahan')
+print('2. Pengurangan')
+print('3. Perkalian')
+print('4. Pembagian')
+c=input('Yang mana?')
+if (c=='1'):
+  print('Perjumlahan dari bilangan pertama dan kedua adalah',a+b)
+elif (c=='2'):
+  print('Pengurangan dari bilangan pertama dan kedua adalah',a-b)
+elif (c=='3'):
+  print('Perkalian dari bilangan pertama dan kedua adalah',a*b)
+elif (c=='4'):
+  print('Pembagian dari bilangan pertama dan kedua adalah',a/b)
+else: print('Error')
